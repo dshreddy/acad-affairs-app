@@ -80,7 +80,7 @@ class _HomeState extends State<Home> {
             ),
             NavigationDestination(
               icon: Icon(Icons.person),
-              label: 'About the dev',
+              label: 'Dev',
             ),
           ],
         ),
