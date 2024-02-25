@@ -13,8 +13,32 @@ class _AboutMeState extends State<AboutMe> {
     return const Padding(
       padding: EdgeInsets.all(20),
       child: Center(
-        child: Image(
-          image: AssetImage("assets/images/poster.jpeg"),
+        child: Column(
+          children: [
+            Expanded(child: const SizedBox()),
+            const Text(
+              "D. Sai Hemanth Reddy",
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+            const Text(
+              "B.Tech CSE",
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+            const Text(
+              "IIT Palakkad",
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+            Expanded(child: const SizedBox()),
+          ],
         ),
       ),
     );

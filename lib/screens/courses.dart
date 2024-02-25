@@ -1,78 +1,75 @@
 import 'package:flutter/material.dart';
 
 class Courses extends StatefulWidget {
-  const Courses({super.key});
+  const Courses({Key? key}) : super(key: key);
 
   @override
   State<Courses> createState() => _CoursesState();
 }
 
 class _CoursesState extends State<Courses> {
+  final TextEditingController _searchController = TextEditingController();
+
+  // Sample course data
+  final List<CourseItem> courseItems = [
+    CourseItem(
+      name: 'Course 1',
+      link: 'feedback + resources',
+    ),
+    CourseItem(
+      name: 'Course 2',
+      link: 'feedback + resources',
+    ),
+    CourseItem(
+      name: 'Course 3',
+      link: 'feedback + resources',
+    ),
+  ];
+
   @override
   Widget build(BuildContext context) {
-    bool isDark = false;
-
     return Padding(
-      padding: EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(8.0),
       child: Column(
         children: <Widget>[
-          SearchAnchor(builder: (context, controller) {
-            return SearchBar(
-              controller: controller,
-              padding: const MaterialStatePropertyAll<EdgeInsets>(
-                  EdgeInsets.symmetric(horizontal: 16.0)),
-              onTap: () {
-                controller.openView();
+          TextField(
+            controller: _searchController,
+            decoration: InputDecoration(
+              labelText: 'Search',
+              prefixIcon: Icon(Icons.search),
+              border: OutlineInputBorder(),
+            ),
+            onChanged: (value) {
+              // Handle search logic here
+            },
+          ),
+          SizedBox(height: 20),
+          Expanded(
+            child: ListView.builder(
+              itemCount: courseItems.length,
+              itemBuilder: (context, index) {
+                final courseItem = courseItems[index];
+                return Card(
+                  child: ListTile(
+                    title: Text(courseItem.name),
+                    subtitle: Text('${courseItem.link}'),
+                  ),
+                );
               },
-              onChanged: (_) {
-                controller.openView();
-              },
-              leading: const Icon(Icons.search),
-            );
-          }, suggestionsBuilder:
-              (BuildContext context, SearchController controller) {
-            return List<ListTile>.generate(5, (int index) {
-              final String item = 'course $index';
-              return ListTile(
-                title: Text(item),
-                onTap: () {
-                  setState(() {
-                    controller.closeView(item);
-                  });
-                },
-              );
-            });
-          }),
-          const SizedBox(
-            height: 20,
-          ),
-          const Card(
-            child: ListTile(
-              title: Text('Course A'),
-            ),
-          ),
-          const Card(
-            child: ListTile(
-              title: Text('Course B'),
-            ),
-          ),
-          const Card(
-            child: ListTile(
-              title: Text('Course C'),
-            ),
-          ),
-          const Card(
-            child: ListTile(
-              title: Text('Course D'),
-            ),
-          ),
-          const Card(
-            child: ListTile(
-              title: Text('Course E'),
             ),
           ),
         ],
       ),
     );
   }
+}
+
+class CourseItem {
+  final String name;
+  final String link;
+
+  CourseItem({
+    required this.name,
+    required this.link,
+  });
 }

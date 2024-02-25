@@ -38,9 +38,9 @@ class _HomeState extends State<Home> {
 
   final Map<int, Widget> bodyWidgets = {
     0: HomeScreen(),
-    1: Courses(),
+    1: Jobs(),
     2: News(),
-    3: Jobs(),
+    3: Courses(),
     4: AboutMe(),
   };
 
@@ -67,16 +67,16 @@ class _HomeState extends State<Home> {
               label: 'Home',
             ),
             NavigationDestination(
-              icon: Icon(Icons.auto_stories),
-              label: 'Courses',
+              icon: Icon(Icons.cases_rounded),
+              label: 'Off-campus',
             ),
             NavigationDestination(
               icon: Icon(Icons.article),
               label: 'News',
             ),
             NavigationDestination(
-              icon: Icon(Icons.cases_rounded),
-              label: 'Jobs',
+              icon: Icon(Icons.auto_stories),
+              label: 'Courses',
             ),
             NavigationDestination(
               icon: Icon(Icons.person),
