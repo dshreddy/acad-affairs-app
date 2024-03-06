@@ -12,41 +12,46 @@ class _AboutMeState extends State<AboutMe> {
   Widget build(BuildContext context) {
     return const Padding(
       padding: EdgeInsets.all(20),
-      child: Center(
-        child: Column(
-          children: [
-            Expanded(child: const SizedBox()),
-            Text(
-              "About the developer :",
-              style: TextStyle(
-                fontSize: 10,
-                fontWeight: FontWeight.w700,
-              ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Text(
+            "Name : Sai Hemanth Reddy",
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 20,
+              fontWeight: FontWeight.w700,
             ),
-            Text(
-              "D. Sai Hemanth Reddy",
-              style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.w700,
-              ),
+          ),
+          Text(
+            "Stream : B.Tech",
+            textAlign: TextAlign.start,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 20,
+              fontWeight: FontWeight.w700,
             ),
-            Text(
-              "B.Tech CSE",
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w700,
-              ),
+          ),
+          Text(
+            "Branch : CSE",
+            textAlign: TextAlign.start,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 20,
+              fontWeight: FontWeight.w700,
             ),
-            Text(
-              "IIT Palakkad",
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w700,
-              ),
+          ),
+          Text(
+            "Semester : 6",
+            textAlign: TextAlign.start,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 20,
+              fontWeight: FontWeight.w700,
             ),
-            Expanded(child: SizedBox()),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

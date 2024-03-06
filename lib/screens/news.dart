@@ -1,3 +1,4 @@
+import 'package:acad_affairs_iitpkd/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -13,6 +14,11 @@ class _NewsState extends State<News> {
 
   // Sample news data
   final List<NewsItem> newsItems = [
+    NewsItem(
+      headline: "KSCSTE tech fest",
+      link:
+          "https://www.thehindu.com/news/national/kerala/kscste-tech-fest-showcases-innovation-and-creativity-at-iit-palakkad/article67907536.ece",
+    ),
     NewsItem(
       headline: 'Indo-Norway workshop',
       link:
@@ -50,6 +56,7 @@ class _NewsState extends State<News> {
               itemBuilder: (context, index) {
                 final newsItem = newsItems[index];
                 return Card(
+                  color: gray50,
                   child: ListTile(
                     title: Text(newsItem.headline),
                     subtitle: InkWell(

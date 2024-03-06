@@ -22,7 +22,14 @@ class _JobsState extends State<Jobs> {
       link:
           'https://www.google.com/about/careers/applications/jobs/results/112996546481398470-software-developer-intern-phd-summer-2024?target_level=INTERN_AND_APPRENTICE',
     ),
-    // Add more job listings here if needed
+    JobListing(
+      company: 'Goldman Sachs',
+      batch: 'UG + PG in 2nd year / pre final year',
+      role: '2024 Summer Analyst Program',
+      salary: 'Not specified',
+      link:
+          'https://goldmansachs.tal.net/vx/lang-en-GB/mobile-0/brand-2/xf-caeaaeb33c61/candidate/so/pm/1/pl/1/opp/2-Summer-Analyst-Summer-Associate-Internship-programs/en-GB',
+    ),
   ];
 
   @override
@@ -53,7 +60,7 @@ class _JobsState extends State<Jobs> {
                 final job = jobListings[index];
                 return Card(
                   child: Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(13.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
