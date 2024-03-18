@@ -23,26 +23,12 @@ class _JobsState extends State<Jobs> {
           'https://goldmansachs.tal.net/vx/lang-en-GB/mobile-0/brand-2/xf-caeaaeb33c61/candidate/so/pm/1/pl/1/opp/2-Summer-Analyst-Summer-Associate-Internship-programs/en-GB',
     ),
     JobListing(
-        company: 'IBM',
-        batch: 'Not specified',
-        role: "Software Developer Intern",
-        salary: "Not specified",
-        link:
-            "https://careers.ibm.com/job/19976272/software-developer-intern-bangalore-in/"),
-    JobListing(
         company: 'IMC',
         batch: 'B.tech 2024 graduates',
         role: "Graduate Software Engineer",
         salary: "Not specified",
         link:
             "https://careers.imc.com/us/en/job/4282981101/Graduate-Software-Engineer"),
-    JobListing(
-        company: 'ZF Group',
-        batch: 'UG in Mechanical or Mechatronics domain',
-        role: "Graduate Engineer Trainee (GET)",
-        salary: "Not specified",
-        link:
-            "https://jobs.zf.com/job/Chennai-GET-B_TechB_E-Mechanical-Mechatronics-TN-631604/1018168301/"),
   ];
 
   @override

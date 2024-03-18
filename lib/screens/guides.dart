@@ -20,16 +20,16 @@ class _GuidesState extends State<Guides> {
       link:
           'https://drive.google.com/file/d/12DI-vuw5eXvnapbc5BbKGVvz0NMT9i-7/view?usp=sharing',
     ),
-    GuideListing(
-      name: 'Research Internships Blue Book IIT M',
-      link:
-          'https://drive.google.com/file/d/11eUJaDishmKvGjGsFLwThbtGj8uP65Z2/view?usp=sharing',
-    ),
-    GuideListing(
-      name: 'CSEA Intern Talk 2021',
-      link:
-          'https://drive.google.com/file/d/1RRD2Exq9_936lbuMYmyhm5cdAKQxvcn8/view?usp=sharing',
-    ),
+    // GuideListing(
+    //   name: 'Research Internships Blue Book IIT M',
+    //   link:
+    //       'https://drive.google.com/file/d/11eUJaDishmKvGjGsFLwThbtGj8uP65Z2/view?usp=sharing',
+    // ),
+    // GuideListing(
+    //   name: 'CSEA Intern Talk 2021',
+    //   link:
+    //       'https://drive.google.com/file/d/1RRD2Exq9_936lbuMYmyhm5cdAKQxvcn8/view?usp=sharing',
+    // ),
     GuideListing(
       name: 'C++',
       link: 'https://github.com/unniisme/cppBootcamp',
